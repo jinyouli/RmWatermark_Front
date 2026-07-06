@@ -1,0 +1,314 @@
+{
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsA/test/test", //启动页面，必选
+	// 		"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "聚合去水印",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/qsy",
+			"style": {
+				"navigationBarTitleText": "去水印",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tools",
+			"style": {
+				"navigationBarTitleText": "工具箱",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/text",
+			"style": {
+				"navigationBarTitleText": "文案",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		}
+
+	],
+	"subPackages": [{
+			"root": "view",
+			"pages": [{
+					"path": "pages/help",
+					"style": {
+						"navigationBarTitleText": "常见问题"
+					}
+				},
+				{
+					"path": "pages/lingqu",
+					"style": {
+						"navigationBarTitleText": "每日领取",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/yqlist",
+					"style": {
+						"navigationBarTitleText": "邀请记录",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/jxlist",
+					"style": {
+						"navigationBarTitleText": "解析记录",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/jflist",
+					"style": {
+						"navigationBarTitleText": "积分明细",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/jxvideo",
+					"style": {
+						"navigationBarTitleText": "解析成功"
+					}
+				},
+				{
+					"path": "pages/yaoqing",
+					"style": {
+						"navigationBarTitleText": "邀请好友",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/jximgs",
+					"style": {
+						"navigationBarTitleText": "图集"
+					}
+				},
+				{
+					"path": "pages/md5",
+					"style": {
+						"navigationBarTitleText": "MD5"
+					}
+				},
+				{
+					"path": "pages/explain",
+					"style": {
+						"navigationBarTitleText": "使用教程"
+					}
+				},
+				{
+					"path": "pages/pengyou",
+					"style": {
+						"navigationBarTitleText": "发圈防折叠"
+					}
+				},
+
+				{
+					"path": "pages/qun",
+					"style": {
+						"navigationBarTitleText": "进交流群"
+					}
+				},
+				{
+					"path": "pages/ai",
+					"style": {
+						"navigationBarTitleText": "文案工具"
+
+					}
+				}
+			]
+
+		}, {
+			"root": "image",
+			"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+				{
+					"path": "pages/index/index",
+					"style": {
+						"navigationBarTitleText": "多功能加水印"
+					}
+				},
+				{
+					"path": "pages/full-mark/full-mark",
+					"style": {
+						"navigationBarTitleText": "全屏水印"
+					}
+				}, {
+					"path": "pages/banner-mark/banner-mark",
+					"style": {
+						"navigationBarTitleText": "横幅水印",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "pages/invisible-mark/invisible-mark",
+					"style": {
+						"navigationBarTitleText": "隐形水印",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "pages/nickname-mark/nickname-mark",
+					"style": {
+						"navigationBarTitleText": "专属水印",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "admin",
+			"pages": [{
+					"path": "pages/alogin",
+					"style": {
+						"navigationBarTitleText": "管理"
+					}
+				},
+				{
+					"path": "pages/aindex",
+					"style": {
+						"navigationBarTitleText": "来啦来啦",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/auser",
+					"style": {
+						"navigationBarTitleText": "用户管理",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/alink",
+					"style": {
+						"navigationBarTitleText": "友情管理",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/adomin",
+					"style": {
+						"navigationBarTitleText": "域名管理",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/ajifen",
+					"style": {
+						"navigationBarTitleText": "积分列表",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/ajiexi",
+					"style": {
+						"navigationBarTitleText": "解析列表",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/config",
+					"style": {
+						"navigationBarTitleText": "系统配置",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "pages/wtools",
+					"style": {
+						"navigationBarTitleText": "文案工具",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				}
+			]
+		},
+		{
+			"root": "os",
+			"pages": [{
+				"path": "pages/os",
+				"style": {
+					"navigationBarTitleText": "腾讯微信团队"
+				}
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "聚合去水印工具",
+		"navigationBarBackgroundColor": "#FF5733",
+		"backgroundColor": "#f7f8fa"
+
+	},
+	"tabBar": {
+		"color": "#C9C9C9",
+		"selectedColor": "#FF5733",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index",
+				"iconPath": "static/img/menu/home.png",
+				"selectedIconPath": "static/img/menu/home1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/qsy",
+				"iconPath": "static/img/menu/qsy.png",
+				"selectedIconPath": "static/img/menu/qsy1.png",
+				"text": "去水印"
+			},
+			{
+				"pagePath": "pages/text",
+				"iconPath": "static/img/menu/text.png",
+				"selectedIconPath": "static/img/menu/text1.png",
+				"text": "写文案"
+			},
+			{
+				"pagePath": "pages/tools",
+				"iconPath": "static/img/menu/tool.png",
+				"selectedIconPath": "static/img/menu/tool1.png",
+				"text": "工具箱"
+			},
+			{
+				"pagePath": "pages/my",
+				"iconPath": "static/img/menu/my.png",
+				"selectedIconPath": "static/img/menu/my1.png",
+				"text": "我的"
+			}
+		]
+	}
+
+}

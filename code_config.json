@@ -1,0 +1,182 @@
+{
+	"desc": "关于本文件的更多信息，请参考文档 代码加固开发者文档: https://developers.weixin.qq.com/miniprogram/dev/devtools/code_obfuscation.html",
+	"switch": true,
+	"configs": [
+		{
+			"path": "admin/pages/adomin.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/aindex.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/ajiexi.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/ajifen.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/alink.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/alogin.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/auser.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/config.js",
+			"sub_switch": true
+		},
+		{
+			"path": "admin/pages/wtools.js",
+			"sub_switch": true
+		},
+		{
+			"path": "common/main.js",
+			"sub_switch": true
+		},
+		{
+			"path": "common/runtime.js",
+			"sub_switch": true
+		},
+		{
+			"path": "common/vendor.js",
+			"sub_switch": true
+		},
+		{
+			"path": "components/adbanner.js",
+			"sub_switch": true
+		},
+		{
+			"path": "components/advideo.js",
+			"sub_switch": true
+		},
+		{
+			"path": "components/tabartop.js",
+			"sub_switch": true
+		},
+		{
+			"path": "os/pages/os.js",
+			"sub_switch": true
+		},
+		{
+			"path": "pages/index.js",
+			"sub_switch": true
+		},
+		{
+			"path": "pages/my.js",
+			"sub_switch": true
+		},
+		{
+			"path": "pages/qsy.js",
+			"sub_switch": true
+		},
+		{
+			"path": "pages/text.js",
+			"sub_switch": true
+		},
+		{
+			"path": "pages/tools.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/common/vendor.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/ai.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/explain.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/help.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/jflist.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/jximgs.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/jxlist.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/jxvideo.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/lingqu.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/md5.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/pengyou.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/qun.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/yaoqing.js",
+			"sub_switch": true
+		},
+		{
+			"path": "view/pages/yqlist.js",
+			"sub_switch": true
+		},
+		{
+			"path": "app.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/pages/banner-mark/banner-mark.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/pages/full-mark/full-mark.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/pages/index/index.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/pages/invisible-mark/invisible-mark.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/pages/nickname-mark/nickname-mark.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/components/add-tips/add-tips.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/components/choose-image/choose-image.js",
+			"sub_switch": true
+		},
+		{
+			"path": "image/common/vendor.js",
+			"sub_switch": true
+		}
+	]
+}

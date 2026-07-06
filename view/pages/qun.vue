@@ -1,0 +1,117 @@
+<template>
+	<view class="page">
+		<u-sticky>
+			<view class="anquan">
+				<u-image src="/static/img/renzheng.png" width="25px" height="25px"></u-image>
+				<text style="padding-left: 5px;">二维码已通过安全验证</text>
+			</view>
+		</u-sticky>
+		<view class="qun">
+			<u-text type="info" size="14px" align="center" text="请长按下方二维码进群"></u-text>
+			<u-gap height="20" bgColor="#f7f8fa"></u-gap>
+			<u-image :src="host+'static/qun.jpg?t='+new Date().getTime()" width="100%" height="auto"
+				mode="widthFix" radius="15"></u-image>
+			<u-gap height="20" bgColor="#f7f8fa"></u-gap>
+			<u-text type="success" size="14px" align="center" text="手机号:18888068130(点击复制)"
+				@click="copyText('18888068130')"></u-text>
+		</view>
+
+	</view>
+</template>
+
+<script>
+	import {
+		baseUrl
+	} from '../../common/config'
+	import {
+		os
+	} from "@/util/os"
+	import {
+		chaPing
+	} from '@/common/ad'
+	let ad = new chaPing()
+	export default {
+		data() {
+			return {
+				host: baseUrl
+			}
+		},
+		onLoad(e) {
+			uni.$u.mpShare = {
+				title: '邀请你加入群聊',
+				path: 'view/pages/qun?ptoken=' + uni.getStorageSync('token'),
+				imageUrl: '/static/img/qunshare.png'
+			}
+			ad.create("adunit-793b7be9bca3c787")
+			if (e.ptoken) {
+				uni.setStorageSync("ptoken", e.ptoken)
+			}
+		},
+		// #ifdef MP-WEIXIN
+		onShareTimeline() {
+			return {
+				title: '邀请你加入群聊',
+				path: 'view/pages/qun?ptoken=' + uni.getStorageSync('token'),
+				imageUrl: '/static/img/qunlogo.png'
+			}
+		},
+		// #endif
+		onShow() {
+			os()
+			ad.show()
+		},
+		methods: {
+			//复制内容
+			copyText(text) {
+				uni.setClipboardData({
+					data: text,
+					success: function(res) {
+						uni.showToast({
+							title: '复制成功',
+						});
+					},
+					fail() {
+						uni.showToast({
+							icon: "error",
+							title: '复制失败了'
+						});
+					}
+				});
+			},
+		}
+	}
+</script>
+
+<style lang="less">
+	page {
+		height: 100%;
+		width: 100%;
+	}
+
+	.page {
+		background: #f7f8fa;
+		width: 100%;
+		min-height: 100%;
+		height: 100%;
+	}
+
+	.anquan {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		background: #dbf1e1;
+		color: #19be6b;
+		font-size: 15px;
+		height: 50px;
+		line-height: 40px;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.qun {
+		width: 100%;
+		padding: 50px 20px 20px;
+		box-sizing: border-box;
+		min-height: calc(100% - 50px);
+	}
+</style>
