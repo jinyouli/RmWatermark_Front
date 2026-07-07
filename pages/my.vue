@@ -1,10 +1,6 @@
 <template>
-	<!--
-	作者：技术宅妞、哆哆、希速云
-	QQ：522605223 
-	-->
 	<view class="page">
-		<TabarTop img="/static/img/logotxt.png" page="2" gap="20">
+		<TabarTop img="/static/img/qsytop.png" page="2" gap="20">
 			<view class="topinfo">
 				<u-avatar size="50" :src="randomStr(headimg)" shape="circle"></u-avatar>
 				<view class="name">
@@ -85,12 +81,6 @@
 			<view class="mitem" @click="toPage('yq')">
 				<u-icon size="25" color="#FF5733" name="plus-people-fill"></u-icon>
 				<text class="mtxt">邀请记录</text>
-				<u-icon color="#97989c" name="arrow-right"></u-icon>
-			</view>
-			<view class="mitem" @click="toPage('qun')">
-				<u-icon size="25" color="#FF5733" name="qq-fill"></u-icon>
-				<text class="mtxt">联系客服</text>
-				<text class="tips">微信群/Q群</text>
 				<u-icon color="#97989c" name="arrow-right"></u-icon>
 			</view>
 		</view>

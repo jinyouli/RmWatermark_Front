@@ -35,10 +35,6 @@
 			"sub_switch": true
 		},
 		{
-			"path": "admin/pages/wtools.js",
-			"sub_switch": true
-		},
-		{
 			"path": "common/main.js",
 			"sub_switch": true
 		},
@@ -88,10 +84,6 @@
 		},
 		{
 			"path": "view/common/vendor.js",
-			"sub_switch": true
-		},
-		{
-			"path": "view/pages/ai.js",
 			"sub_switch": true
 		},
 		{

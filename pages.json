@@ -11,7 +11,7 @@
 		{
 			"path": "pages/index",
 			"style": {
-				"navigationBarTitleText": "聚合去水印",
+				"navigationBarTitleText": "Fine解析小助手",
 				"navigationStyle": "custom"
 			}
 		},
@@ -133,13 +133,6 @@
 					"style": {
 						"navigationBarTitleText": "进交流群"
 					}
-				},
-				{
-					"path": "pages/ai",
-					"style": {
-						"navigationBarTitleText": "文案工具"
-
-					}
 				}
 			]
 
@@ -245,14 +238,6 @@
 						"enablePullDownRefresh": true,
 						"onReachBottomDistance": 50
 					}
-				},
-				{
-					"path": "pages/wtools",
-					"style": {
-						"navigationBarTitleText": "文案工具",
-						"enablePullDownRefresh": true,
-						"onReachBottomDistance": 50
-					}
 				}
 			]
 		},
@@ -268,7 +253,7 @@
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "聚合去水印工具",
+		"navigationBarTitleText": "Fine解析小助手",
 		"navigationBarBackgroundColor": "#FF5733",
 		"backgroundColor": "#f7f8fa"
 
@@ -289,18 +274,6 @@
 				"iconPath": "static/img/menu/qsy.png",
 				"selectedIconPath": "static/img/menu/qsy1.png",
 				"text": "去水印"
-			},
-			{
-				"pagePath": "pages/text",
-				"iconPath": "static/img/menu/text.png",
-				"selectedIconPath": "static/img/menu/text1.png",
-				"text": "写文案"
-			},
-			{
-				"pagePath": "pages/tools",
-				"iconPath": "static/img/menu/tool.png",
-				"selectedIconPath": "static/img/menu/tool1.png",
-				"text": "工具箱"
 			},
 			{
 				"pagePath": "pages/my",

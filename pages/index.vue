@@ -1,17 +1,6 @@
 <template>
-	<!-- 
-	作者：技术宅妞、哆哆、希速云
-	QQ：522605223 
-	-->
 	<view class="page">
-		<TabarTop img="/static/img/logotxt.png"></TabarTop>
-		<view class="guide-main" v-if="adtips">
-		    <view class="text"> 点击添加到我的小程序，下次访问更便捷 </view>
-		    <view class="close">
-				<u-icon color="#fff" name="close-circle-fill" @click="adtips=false"></u-icon>
-		        <!-- <uni-icons bind:__l="__l" uI="547341d0-1" uP="{{c}}" wx:if="{{c}}"></uni-icons> -->
-		    </view>
-		</view>
+		<TabarTop img="/static/img/qsytop.png"></TabarTop>
 		<u--image src="/static/img/banner.png" @click="toPage('qsy')" width="100%" height="auto" radius="15"
 			mode="widthFix"></u--image>
 		<u-gap :height="15" v-if="!$u.test.isEmpty(notice)" bgColor="#f7f8fa"></u-gap>
@@ -27,26 +16,12 @@
 					<u--image src="/static/img/qushuiyin.png" width="36" height="36" mode="widthFix"></u--image>
 				</view>
 			</view>
-			<view class="mitem" @click="toPage('tools')">
-				<text class="mtitle">工具箱</text>
-				<view class="mtips">发圈防止折叠</view>
-				<view class="micon">
-					<u--image src="/static/img/md5.png" width="36" height="36" mode="widthFix"></u--image>
-				</view>
-			</view>
 
 			<view class="mitem" @click="toPage('lq')">
 				<text class="mtitle">领积分</text>
 				<view class="mtips">每日签到领取</view>
 				<view class="micon">
 					<u--image src="/static/img/jifen.png" width="36" height="36" mode="widthFix"></u--image>
-				</view>
-			</view>
-			<view class="mitem" @click="toPage('yq')">
-				<text class="mtitle">爱分享</text>
-				<view class="mtips">分享获取积分</view>
-				<view class="micon">
-					<u--image src="/static/img/fenxiang.png" width="36" height="36" mode="widthFix"></u--image>
 				</view>
 			</view>
 
@@ -57,6 +32,7 @@
 					<u--image src="/static/img/help.png" width="36" height="36" mode="widthFix"></u--image>
 				</view>
 			</view>
+			<!--
 			<u-button class="mitem" open-type="contact" :customStyle="{'height':'80px'}">
 				<text class="mtitle">找客服</text>
 				<view class="mtips">快来找我聊聊</view>
@@ -64,7 +40,7 @@
 					<u--image src="/static/img/kefu.png" width="36" height="36" mode="widthFix"></u--image>
 				</view>
 			</u-button>
-			<!-- <view class="mitem" @click="toPage('gzh')">
+			 <view class="mitem" @click="toPage('gzh')">
 				<text class="mtitle">公众号</text>
 				<view class="mtips">关注公众号吧</view>
 				<view class="micon">

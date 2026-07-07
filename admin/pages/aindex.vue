@@ -1,6 +1,6 @@
 <template>
 	<view class="page">
-		<TabarTop img="/static/img/logotxt.png" page="2" gap="20">
+		<TabarTop img="/static/img/qsytop.png" page="2" gap="20">
 			<view class="topinfo">
 				<u-avatar size="50" :src="randomStr(headimg)" shape="circle"></u-avatar>
 				<view class="name">
@@ -56,11 +56,6 @@
 				<u-icon size="25" color="#FF5733" name="star-fill"></u-icon>
 				<text class="mtxt">友情管理</text>
 				<text class="tips" v-if="tjinfo.link>0">{{tjinfo.link}}个</text>
-				<u-icon color="#97989c" name="arrow-right"></u-icon>
-			</view>
-			<view class="mitem" @click="toPage('wen')">
-				<u-icon size="25" color="#FF5733" name="star-fill"></u-icon>
-				<text class="mtxt">文案工具</text>
 				<u-icon color="#97989c" name="arrow-right"></u-icon>
 			</view>
 			<view class="mitem" @click="toPage('config')">
@@ -249,9 +244,6 @@
 						break;
 					case "adomin":
 						this.$u.route("admin/pages/adomin")
-						break;
-					case "wen":
-						this.$u.route("admin/pages/wtools")
 						break;
 					case "config":
 						this.$u.route("admin/pages/config")

@@ -10,7 +10,7 @@
 		<u-gap :height="20" bgColor="#f7f8fa"></u-gap>
 		<u-notice-bar :text="notice" speed="50" @click="noticeshow=true"></u-notice-bar>
 		<view class="tips">
-			<text class="ttxt">支持平台：某音、某手、某书、某瓜等</text>
+			<text class="ttxt">支持平台：某音、某手、某书等</text>
 			<u--text @click="$u.route({type: 'to',url: 'view/pages/help'})" type="warning" bold align="right" size="14"
 				text="常见问题"></u--text>
 				<u-icon name="arrow-right" color="#f9ae3d"></u-icon>
@@ -37,8 +37,8 @@
 					去水印说明
 				</view>
 				<view class="qcont">
-					聚合去水印工具仅提供技术服务的中立工具,提供的去水印功能仅帮助用户提取视频自行学习、观看、降低视频流量障碍,提升观赏体验。<br />
-					请用户注意合法使用,若用户泛滥该功能实施侵权行为,用户应自行承担由此产生的法律责任.聚合去水印工具倡导与用户共同营造风清正气的网络环境！
+					本去水印工具仅提供技术服务的中立工具，提供的去水印功能仅帮助用户提取视频自行学习、观看、降低视频流量障碍，提升观赏体验。<br />
+					请用户注意合法使用，若用户泛滥该功能实施侵权行为，用户应自行承担由此产生的法律责任，与本工具无关！
 				</view>
 				<view class="qbtn" @click="noticeshow=false">
 					确定
@@ -71,7 +71,7 @@
 			return {
 				noticeshow: false,
 				link: "",
-				notice: "聚合去水印工具仅提供技术服务的中立工具,提供的去水印功能仅帮助用户提取视频自行学习、观看、降低视频流量障碍,提升观赏体验.请用户注意合法使用,若用户泛滥该功能实施侵权行为,用户应自行承担由此产生的法律责任.聚合去水印工具倡导与用户共同营造风清正气的网络环境!"
+				notice: "本工具仅提供学习测试使用，视频版权归平台及作者所有，本程序不存储任何内容。"
 			}
 		},
 		onLoad() {

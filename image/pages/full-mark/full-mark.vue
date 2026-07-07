@@ -175,7 +175,7 @@
 		},
 		data() {
 			return {
-				watermark:"聚合去水印工具",
+				watermark:"Fine解析小助手",
 				images: [], // 存储图片的
 				currentImgeIndex: 0, // 当前图片 索引
 				currentImgeInfo: { // 当前图片 的宽高

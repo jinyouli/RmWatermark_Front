@@ -38,7 +38,6 @@
 						<text v-if="item.type==3">解析扣减</text>
 						<text v-if="item.type==4">签到领取</text>
 						<text v-if="item.type==5">邀请领取</text>
-						<text v-if="item.type==6">文案扣减</text>
 						<view class="time">
 							{{item.addtime}}
 						</view>

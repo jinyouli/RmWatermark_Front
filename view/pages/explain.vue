@@ -23,7 +23,7 @@
 			<text class="title2">第三步</text>
 			<view class="cont">
 				<view class="sitem">
-					<view class="stxt">打开聚合去水印工具小程序，在输入框输入链接或点击【粘贴内容】按钮，然后点击【免费去水印】按钮，如下图</view>
+					<view class="stxt">打开Fine解析小助手小程序，在输入框输入链接或点击【粘贴内容】按钮，然后点击【免费去水印】按钮，如下图</view>
 					<u--image src="/static/img/help/3.png" height="auto" radius="15" mode="widthFix"></u--image>
 				</view>
 			</view>

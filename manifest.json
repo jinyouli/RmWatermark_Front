@@ -1,5 +1,5 @@
 {
-    "name" : "聚合去水印工具",
+    "name" : "Fine解析小助手",
     "appid" : "__UNI__40FDC62",
     "description" : "一键去除视频水印",
     "versionName" : "2.0.37",
@@ -144,7 +144,7 @@
                 "enable" : false
             }
         },
-        "title" : "聚合去水印工具",
+        "title" : "Fine解析小助手",
         "sdkConfigs" : {
             "maps" : {
                 "qqmap" : {
